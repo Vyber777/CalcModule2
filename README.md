@@ -1,18 +1,16 @@
 
-# Итоговая задача 2 модуля Яндекс лицея.
+# Итоговая задача 2 модуля курса по Go от Яндекса
 
 Этот проект реализует веб-сервис, принимающий выражение через http запрос и возвращающий результат вычислений. Да, это калькулятор.
 
 
 ## Инструкция по запуску:
 
-1) Скопируйте репозиторий:
+1) Скопируйте репозиторий и перейдите в место расположения проекта:
 
 ```bash
 git clone https://github.com/Vyber777/CalcModule2
-```
 
-```bash
 cd CalcModule2
 ```
 
@@ -27,7 +25,7 @@ export TIME_DIVISIONS_MS=400
 go run cmd/orchestrator.start/main.go
 ```
 
-В консоль выведется Starting Orchestrator on port 8080.
+Выведется Starting Orchestrator on port 8080.
 
 Переходим в репозиторию с проектом:
 
@@ -55,7 +53,7 @@ Starting worker 3
 
 ## Примеры использования:
 
-### Успешный запрос:
+Успешный запрос:
 
 ```bash
 curl --location 'http://localhost:8080/api/v1/calculate' --header 'Content-Type: application/json' --data '{"expression": "2*2+2"}'
@@ -158,4 +156,4 @@ go test ./internal/agent/agent_calculation_test.go
 ok  	calc_service/internal/evaluator	0.001s
 ```
 
-4) При ошибке в тестах будет указано где она совершена и информация по ней.
+4) При ошибке в тестах будет указано где она произошла и информация по ней.
