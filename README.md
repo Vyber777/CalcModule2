@@ -28,7 +28,10 @@ export TIME_DIVISIONS_MS=400
 go run cmd/orchestrator.start/main.go
 ```
 
-Выведется Starting Orchestrator on port 8080.
+Выведется:
+```
+Starting Orchestrator on port 8080.
+```
 
 Переходим в репозиторию с проектом:
 
